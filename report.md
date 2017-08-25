@@ -146,6 +146,7 @@ The recognition performance and yaml files for the test worlds are:
 As long as the entire view of the scene was sent as input after clustering, the recognition was successful. The reason why the part of glue behind other object in test3 was not successful is that the trained SVM does not contain the exactly matching histograms for colour and normals for the partial arfifact. This is a main drawback for this sampling and training method, which ignores the geometric and colour features of the objects and easily gets confused with the incomplete similar ones.
 
 The tasks of extra challenges are on the way with this project. Not included all in this commit.
+
 #### More thoughts
 
 As a couteract for this inaccuracy, I am expeimenting convolutional neural network to substitute the SVM models. CNN can compare the each geometry features and hardly  be confused with other features. However, the creation of dataset is hard part and also the training this model is even harder and time consuming part.
